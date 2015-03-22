@@ -1,3 +1,9 @@
 language: java
-
-# release
+deploy:
+  provider: releases
+  api_key:
+    secure: Wi8N4dWlld5Sa7CtTtqD1BtNTjzwmemV72CxPtlU2IS8OorrGD8bxaubzyybY7yEYkYC2ZjbyRAvvbhtBK2Y7rWktjShrFvn4xZfiXKbKyvd1JzUw2v5yK+H86bw1p2t08o8J2tRHMFMMABnJULVKo2KBfyr798ht6idybN9VW4=
+  file: cucumber-report-web\target\cucumber-report-web-1.1.0.RC18-SNAPSHOT-bootable.war
+  on:
+    tags:true
+#    branch: deployArtefactsToGithubReleases
